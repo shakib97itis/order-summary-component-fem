@@ -1,0 +1,82 @@
+@use "./../utilities" as u;
+
+.card {
+  width: u.rem(350);
+  background-color: var(--white);
+  border-radius: u.rem(8);
+  overflow: hidden;
+  text-align: center;
+  z-index: 3;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__content {
+    padding: u.rem(16);
+  }
+
+  &__title {
+    font-size: u.rem(24);
+    text-align: center;
+    font-weight: 900;
+  }
+
+  &__discription {
+    font-size: u.rem(14);
+    line-height: 1.5;
+    text-align: center;
+    color: var(--text-gray);
+  }
+
+  &__plan {
+    background-color: var(--very-pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: u.rem(10);
+    border-radius: u.rem(8);
+    padding: u.rem(16) u.rem(8);
+    margin-bottom: u.rem(14);
+  }
+
+  &__plan-icon {
+    // width: u.rem(60);
+    // height: u.rem(60);
+  }
+
+  &__plan-price {
+    p {
+      margin: 0;
+      // color: var(--text-gray);
+    }
+
+    &--title {
+      margin-bottom: u.rem(8);
+      font-weight: 900;
+    }
+
+    &--amount {
+      color: var(--text-gray);
+      // font-weight: 700;
+    }
+  }
+
+  &__payment-btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: u.rem(22);
+    width: 100%;
+    border-radius: u.rem(8);
+    background-color: var(--bright-blue);
+    border: none;
+  }
+
+  &__cancel-order-btn {
+    font-size: u.rem(14);
+    text-decoration: none;
+    margin-bottom: u.rem(24);
+    font-weight: 700;
+    color: var(--text-gray);
+  }
+}

@@ -1,0 +1,5 @@
+@use "./../utilities/" as u;
+.btn {
+  color: var(--white);
+  padding: u.rem(16) u.rem(32);
+}
