@@ -10,24 +10,26 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  // background-color: red;
+  right: 0;
+  bottom: 0;
+
   background: url("/src/images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  @media (min-width: 800px) {
+
+  @media (min-width: 800px) { // need to change media query
     background: url("/src/images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100%;
   }
 }
 
-.card__container {
+.section-cards {
   max-width: 1140px;
-  height: 100%;
   margin: 0 auto;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  // background-color: red;
 }

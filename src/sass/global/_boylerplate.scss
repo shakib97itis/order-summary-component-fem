@@ -3,6 +3,10 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+
+  @include u.breakpoint-down("small") {
+    font-size: 80%;
+  }
 }
 
 *,

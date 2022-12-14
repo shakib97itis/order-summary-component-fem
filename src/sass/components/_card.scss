@@ -1,7 +1,11 @@
 @use "./../utilities" as u;
 
 .card {
-  width: u.rem(350);
+  max-width: 80%;
+  @include u.breakpoint("medium") {
+    max-width: u.rem(375);
+  }
+
   background-color: var(--white);
   border-radius: u.rem(8);
   overflow: hidden;
@@ -11,7 +15,6 @@
   &__image {
     width: 100%;
   }
-
   &__content {
     padding: u.rem(16);
   }
@@ -38,17 +41,14 @@
     border-radius: u.rem(8);
     padding: u.rem(16) u.rem(8);
     margin-bottom: u.rem(14);
-  }
 
-  &__plan-icon {
-    // width: u.rem(60);
-    // height: u.rem(60);
   }
 
   &__plan-price {
-    p {
-      margin: 0;
-      // color: var(--text-gray);
+    margin: 0;
+    & span {
+      display: block;
+      // margin: 0;
     }
 
     &--title {
@@ -62,6 +62,10 @@
     }
   }
 
+  &__plan-change:hover {
+    text-decoration: none;
+  }
+
   &__payment-btn {
     display: block;
     margin: 0 auto;
@@ -70,6 +74,12 @@
     border-radius: u.rem(8);
     background-color: var(--bright-blue);
     border: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+  }
+
+  &__payment-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 38px, rgba(0, 0, 0, 0.22) 0px 10px 12px;
   }
 
   &__cancel-order-btn {
@@ -78,5 +88,6 @@
     margin-bottom: u.rem(24);
     font-weight: 700;
     color: var(--text-gray);
+    cursor: pointer;
   }
 }

@@ -3,3 +3,34 @@
 @function rem($size) {
   @return math.div($size, 16) + rem;
 }
+
+@function em($size) {
+  @return math.div($size, 16) + em;
+}
+
+
+// 375px, 600px, 800px
+$breakpoints-up: (
+	'small': em(375),
+	'medium': em(600),
+	'large': em(800),
+);
+
+// 639px, 1149px, 1399px
+$breakpoints-down: (
+  'small': em(376.98),
+	'medium': em(599.98),
+	'large': em(799.98),
+);
+
+@mixin breakpoint($size) {
+	@media (min-width: map-get($breakpoints-up, $size)) {
+		@content;
+	}
+}
+
+@mixin breakpoint-down($size) {
+	@media (max-width: map-get($breakpoints-down, $size)) {
+		@content;
+	}
+}
