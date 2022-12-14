@@ -9,6 +9,11 @@ html {
   font-size: 100%;
   box-sizing: border-box;
 }
+@media (max-width: 23.56125em) {
+  html {
+    font-size: 80%;
+  }
+}
 
 *,
 *::before,
@@ -48,12 +53,17 @@ p {
 }
 
 .card {
-  width: 21.875rem;
+  max-width: 80%;
   background-color: var(--white);
   border-radius: 0.5rem;
   overflow: hidden;
   text-align: center;
   z-index: 3;
+}
+@media (min-width: 37.5em) {
+  .card {
+    max-width: 23.4375rem;
+  }
 }
 .card__image {
   width: 100%;
@@ -82,8 +92,11 @@ p {
   padding: 1rem 0.5rem;
   margin-bottom: 0.875rem;
 }
-.card__plan-price p {
+.card__plan-price {
   margin: 0;
+}
+.card__plan-price span {
+  display: block;
 }
 .card__plan-price--title {
   margin-bottom: 0.5rem;
@@ -91,6 +104,9 @@ p {
 }
 .card__plan-price--amount {
   color: var(--text-gray);
+}
+.card__plan-change:hover {
+  text-decoration: none;
 }
 .card__payment-btn {
   display: block;
@@ -100,6 +116,11 @@ p {
   border-radius: 0.5rem;
   background-color: var(--bright-blue);
   border: none;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.card__payment-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 38px, rgba(0, 0, 0, 0.22) 0px 10px 12px;
 }
 .card__cancel-order-btn {
   font-size: 0.875rem;
@@ -107,6 +128,7 @@ p {
   margin-bottom: 1.5rem;
   font-weight: 700;
   color: var(--text-gray);
+  cursor: pointer;
 }
 
 .btn {
@@ -126,8 +148,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNzUiIGhlaWdodD0iMTk0Ij48cGF0aCBmaWxsPSIjRDZFMUZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0tMTMxLjgwOCAxNTUuMzY2Yzk3LjAyNiA1MS41MTIgMjA0LjIzMyA1MS41MTIgMzIxLjYyIDAgMTE3LjM4OC01MS41MTIgMjIzLjI3LTUxLjUxMiAzMTcuNjQ4IDBWMGgtNjM5LjI2OHYxNTUuMzY2eiIvPjwvc3ZnPg==);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -140,10 +162,10 @@ body {
   }
 }
 
-.card__container {
+.section-cards {
   max-width: 1140px;
-  height: 100%;
   margin: 0 auto;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
