@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://shakib97itis.github.io/order-summary-component-fem/)
+- Live Site URL: [Order Summery Component](https://shakib97itis.github.io/order-summary-component-fem/)
 
 ## My process
 
