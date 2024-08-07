@@ -1,37 +1,23 @@
 
-# Order summary card solution
+# Order summary card component
 
 This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj).
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
-The task is to create a order card using frontend technology.
+The task is to create a responsive order card with any frontend technology.
 
 ### The challenge
 
 Users should be able to:
 
-- See hover states for interactive elements
+- See hover states for interactive elements.
+- See and use the component on any device. it should be responsive.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/shakib1010/order-summary-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://shakib97itis.github.io/order-summary-component-fem/)
 
 ## My process
 
@@ -49,4 +35,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Shakibul islam](https://www.your-site.com)
+- Name - Shakibul Islam 
